@@ -1,0 +1,21 @@
+## called by load 'gnu10'
+## displays 4 balls in a one-dimensional box
+
+
+set origin 0.1,0.1
+splot\
+ '/tmp/1' every 1::t::t u 3:(0.0.0) w points 1 1,\
+ '/tmp/1' every 1::t::t u 9:(0.0.0) w p 1 1,\
+ '/tmp/1' every 1::t::t u 15:(0.0.0) w p 1 1,\
+ '/tmp/1' every 1::t::t u 21:(0.0.0) w p 5 6,\
+ '/tmp/1' every 1::t::t u 27:(0.0.0) w p 5 6,\
+ '/tmp/1' every 1::t::t u 33:(0.0.0) w p 5 6,\
+ '/tmp/1' every 1::t::t u 39:(0.0.0) w p 5 6,\
+ '/tmp/1' every 1::t::t u 45:(0.0.0) w p 1 1,\
+ '/tmp/1' every 1::t::t u 51:(0.0.0) w p 1 1,\
+ '/tmp/1' every 1::t::t u 57:(0.0.0) w p 1 1
+
+ 
+t=t+1;
+pause dt;
+if(t<T) call 'gnu13'

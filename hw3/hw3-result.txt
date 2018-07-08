@@ -1,0 +1,10 @@
+HW3 Exponential series
+
+a) Program that calculates summation for x=0.1,1,10,100 is in expsum.cc. The result is in expres.dat.
+
+b) To investigate convergence, use code in expconv.cc. The result is in expconv.dat. As one can see, when x is small (<=10) the algorithm converges 
+to the correct answer. When x is larger than 10, the algorithm converges to the wrong answer (the relative error from the built-in exp function is 
+larger than the tolerance eps, as indicated by the flag 1 in the last column of expconv.dat). When x is too large, the algorithm does not even converge.
+
+c) Codes for timing are in expgood.cc and expbad.cc. They simply calculate the sum for 9,990,000 numbers between 0.1 and 100 with step 0.00001. Timing
+them gives 58.2s for expgood and 1m5.1s for expbad.

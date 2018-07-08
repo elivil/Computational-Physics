@@ -1,0 +1,22 @@
+## called by load 'gnu10'
+## displays 4 balls in a one-dimensional box
+
+
+set origin 0.1,0.1
+splot\
+ 'bonk.dat' every 1::t::t u 3::6 w p 1 1,\
+'bonk.dat' every 1::t::t u 9::12 w p 1 1,\
+'bonk.dat' every 1::t::t u 15::18 w p 1 1,\
+'bonk.dat' every 1::t::t u 21::24 w p 5 6,\
+'bonk.dat' every 1::t::t u 27::30 w p 5 6,\
+'bonk.dat' every 1::t::t u 33::36 w p 5 6,\
+'bonk.dat' every 1::t::t u 39::42 w p 5 6,\
+'bonk.dat' every 1::t::t u 45::48 w p 1 1,\
+'bonk.dat' every 1::t::t u 51::54 w p 1 1,\
+'bonk.dat' every 1::t::t u 57::60 w p 1 1
+
+ 
+
+t=t+1;
+pause dt;
+if(t<T) call 'gnu12'

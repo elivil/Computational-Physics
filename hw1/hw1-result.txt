@@ -1,0 +1,8 @@
+HW 1 Overflow and underflow limits
+
+Double precision -  over: after doubling 2^1023 (8.99 * 10^307) , under: after halving 2^-1074 (4.94 * 10^-324) (code dover.c)
+
+Single floating-point precision - over: after doubling 2^127 (1.70 * 10^38), under: after halving 2^-149 (1.40 * 10^-45) (code fover.c)
+
+Integers - over: after doubling 2^30, under: after doubling -2^31 (code iover.c)
+(note the smallest positive integer that can be represented is obviously 1, the initial value).

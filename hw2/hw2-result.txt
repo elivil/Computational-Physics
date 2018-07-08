@@ -1,0 +1,5 @@
+HW2 Machine precision
+
+Double-precision numbers: 2.22044604925031308e-16 (code dlimit.cc)
+
+Single-precision: 1.19209289550781250e-07 (code flimit.cc)

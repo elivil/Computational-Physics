@@ -1,0 +1,9 @@
+bin_width = 1
+bin_number(x) = floor(x/bin_width)
+rounded(x) = bin_width * ( bin_number(x) + 0.5 )
+bin_width2 = 1.0
+bin_number2(x) = floor(x/bin_width2)
+rounded2(x) = bin_width2 * ( bin_number2(x) + 0.5 )
+UNITY = 1
+plot '/tmp/1' u (rounded($5)):(UNITY/bin_width) t 'width 1' smooth frequency w histeps,\
+  '/tmp/1' u (rounded2($7)):(UNITY/bin_width2) t 'width 1' smooth frequency w histeps 3
